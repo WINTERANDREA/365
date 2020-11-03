@@ -16,6 +16,7 @@ body {
   max-width: 1900px;
 }
 
+/* TOP SECTION */
 .hero {
   height: 300px;
   background-image: url(../img/TOP_image.jpg);
@@ -166,10 +167,49 @@ body {
   width: 100%;
 }
 
-/* NUMBER SECTION */
-.number {
-  height: 100px;
+/* COUNTER SECTION */
+#counter .container {
+  display: grid;
+  justify-content: space-around;
+  height: 100%;
+  padding-top: 30px;
   background: white;
+}
+
+.count_cont {
+  margin-bottom: 30px;
+}
+
+.count_cont span {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.count_cont img {
+  width: 60px;
+}
+
+.count_text {
+  display: block;
+  font-weight: regular;
+  font-size: 20px;
+  color: rgb(175, 175, 175);
+  text-transform: uppercase;
+  margin-left: 70px;
+  margin-top: -10px;
+  line-height: 20px;
+}
+
+@media (min-width: 1410px) {
+  .count_cont {
+    min-width: 350px;
+  }
+}
+
+@media (max-width: 992px) {
+  .count_cont {
+    min-width: 50%;
+  }
 }
 
 @media (max-width: 600px) {
