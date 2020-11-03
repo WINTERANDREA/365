@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Gotham, sans-serif;
+  background: #111;
+  color: rgb(231, 202, 35);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: 1400px;
+}
+
+.hero {
+  height: 300px;
+  background-image: url(../img/TOP_image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.row {
+  height: 100%;
+}
+
+.esagono_cont {
+  display: -webkit-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-50px);
+}
+
+.esagono_cont_2 {
+  display: -webkit-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-22px);
+}
+
+.esagono_cont_3 {
+  transform: translate(-69px, 24px);
+}
+
+.esagono_cont_4 {
+  display: -webkit-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-116px, 24px);
+}
+
+.esagono_cont_4 .esagono:last-child {
+  transform: translate(-47px, -75px);
+}
+
+.esagono {
+  width: 175px;
+  height: 75px;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.gold {
+  transform: translateY(-50px);
+}
+
+.esagono_icon {
+  height: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  transition: opacity 350ms;
+}
+
+.esagono::before,
+.esagono::after {
+  content: "";
+}
+
+.esagono::before,
+.esagono::after,
+.esagono_img {
+  top: -50%;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  display: block;
+  position: absolute;
+  /* clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); */
+  z-index: -1;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.esagono::before {
+  background-image: url(../img/Esagono_Filtro.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.esagono.gold::before {
+  background-image: url(../img/Esagono_contorno_giallo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.esagono::after {
+  background: transparent;
+  transition: opacity 350ms;
+  -webkit-transition: opacity 350ms;
+}
+
+.esagono.gold::after {
+  background: transparent;
+  opacity: 1;
+  transition: opacity 350ms;
+  -webkit-transition: opacity 350ms;
+}
+
+.esagono:hover .esagono_icon .icona {
+  filter: drop-shadow(0px 0px 7px #333);
+}
+
+.esagono.gold:hover .icona {
+}
+
+.esagono:hover::before {
+  background-image: url(../img/Esagono_contorno_bianco.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.esagono.gold:hover::before {
+  background-image: url(../img/Esagono_contorno_giallo.svg);
+}
+
+.esagono::hover::after {
+  opacity: 0;
+}
+
+.esagono.gold::hover::after {
+  opacity: 0;
+}
+
+.mb-6 {
+  margin-bottom: 73px;
+}
+
+.icona {
+  width: 100%;
+}
+
+/* NUMBER SECTION */
+.number {
+  height: 100px;
+  background: white;
+}
+
+@media (max-width: 600px) {
+  .esagono {
+    width: 125px;
+    height: 45px;
+  }
+}
