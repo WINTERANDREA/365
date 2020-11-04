@@ -30,7 +30,7 @@ button:focus {
 
 /* TOP SECTION */
 .hero {
-  height: 300px;
+  height: 600px;
   background-image: url(../img/TOP_image.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -56,11 +56,11 @@ button:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transform: translateX(-22px);
+  transform: translate(-22px, 40px);
 }
 
 .esagono_cont_3 {
-  transform: translate(-69px, 24px);
+  transform: translate(-93px, 63px);
 }
 
 .esagono_cont_4 {
@@ -68,23 +68,23 @@ button:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translate(-116px, 24px);
+  transform: translate(-163px, 63px);
 }
 
 .esagono_cont_4 .esagono:last-child {
-  transform: translate(-47px, -75px);
+  transform: translate(-70px, -112px);
 }
 
 .esagono {
-  width: 175px;
-  height: 75px;
+  width: 265px;
+  height: 115px;
   position: relative;
   text-align: center;
   z-index: 1;
 }
 
 .gold {
-  transform: translateY(-50px);
+  transform: translate(22px, -50px);
 }
 
 .esagono_icon {
@@ -172,7 +172,7 @@ button:focus {
 }
 
 .mb-6 {
-  margin-bottom: 73px;
+  margin-bottom: 109px;
 }
 
 .icona {
