@@ -99,6 +99,17 @@ button:focus {
   transition: opacity 350ms;
 }
 
+.esagono_icon .icona {
+  padding: 70px;
+}
+
+.esagono_icon .icona.big {
+  padding: 90px;
+}
+.esagono_icon .icona.small {
+  padding: 60px;
+}
+
 .esagono::before,
 .esagono::after {
   content: "";
@@ -344,12 +355,5 @@ button:focus {
 @media (max-width: 992px) {
   .count_cont {
     min-width: 50%;
-  }
-}
-
-@media (max-width: 600px) {
-  .esagono {
-    width: 125px;
-    height: 45px;
   }
 }
