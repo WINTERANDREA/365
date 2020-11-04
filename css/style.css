@@ -12,6 +12,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+button:active,
+button:focus {
+  outline: none;
+}
+
 .container {
   max-width: 1900px;
 }
@@ -204,6 +216,7 @@ body {
 #servizi .container {
   height: 100%;
   padding-top: 30px;
+  padding-bottom: 100px;
   background: var(--primary-light);
   color: #666;
 }
@@ -227,21 +240,45 @@ body {
   font-weight: 400;
   font-size: 24px;
   padding-left: 65px;
-  width: 60%;
+  width: 70%;
 }
 
-.bg-white {
-  background: "fff";
-  height: 600px;
+.card_cont {
   position: relative;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
-.card_servizi_larga {
+.card_servizi {
+  position: absolute;
+  top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: absolute;
   width: 300px;
-  height: 100%;
+  padding: 25px;
   border-radius: 20px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.card_servizi h3 {
+  color: var(--primary);
+  font-size: 45px;
+}
+
+.content {
+  text-align: left;
+  overflow: hidden;
+  font-weight: 300;
+  font-size: 16px;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+.card_servizi img {
+  width: 60px;
 }
 
 @media (min-width: 1410px) {
