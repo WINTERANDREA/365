@@ -28,6 +28,11 @@ button:focus {
   max-width: 1900px;
 }
 
+.bg-white {
+  height: 40px;
+  background: #fff;
+}
+
 /* TOP SECTION */
 .hero {
   height: 500px;
@@ -428,11 +433,67 @@ button:focus {
 }
 
 .sottotitolo_fumetti h4 {
-  font-size: 24px;
+  font-size: 28px;
   margin-bottom: 0;
 }
 
 .sottotitolo_fumetti p {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
+}
+
+/* FOOTER */
+#contatti {
+  background: var(--primary);
+  min-height: 400px;
+  color: #fff;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+#contatti row > div {
+  width: 100%;
+}
+
+#contatti h3 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#contatti h4 {
+  font-size: 30px;
+  margin-top: 20px;
+  line-height: 25px;
+  font-weight: bold;
+}
+
+#contatti span {
+  color: rgba(102, 102, 102, 0.938);
+  display: block;
+  font-size: 20px;
+  font-weight: book;
+}
+
+#contatti img {
+  margin-top: 70px;
+  width: 80px;
+}
+
+#contatti img:first-child {
+  margin-right: 25px;
+}
+
+#contatti a {
+  color: #666;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#contatti address.phone a {
+  font-weight: book;
+}
+
+#contatti address a:hover {
+  text-decoration: none;
 }
