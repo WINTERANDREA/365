@@ -252,18 +252,16 @@ button:focus {
 
 .servizi_text {
   display: block;
-  font-weight: 400;
+  font-weight: book;
   font-size: 24px;
   padding-left: 65px;
   width: 70%;
 }
 
-/* .card_cont {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  justify-items: center;
-} */
+#servizi_cont_dropdown {
+  min-height: auto;
+  padding-bottom: 20px;
+}
 
 .card_servizi {
   display: flex;
@@ -351,4 +349,67 @@ button:focus {
 
 .card_servizi img {
   width: 60px;
+}
+
+/* Vignette */
+.container_vignette {
+  min-height: auto;
+  background-image:/*  linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ), */ url(../img/IMG_tastiera.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.titolo_fumetti {
+  height: 280px;
+}
+
+.titolo_fumetti h3 span {
+  font-weight: bold;
+  color: var(--primary);
+  display: block;
+  font-size: 34px;
+  margin-top: 16px;
+}
+
+.titolo_fumetti h3 span:nth-child(2) {
+  margin-top: -7px;
+  font-size: 30px;
+  margin-top: 2px;
+}
+
+.titolo_fumetti h3 span:last-child {
+  margin-top: -7px;
+  font-size: 48px;
+}
+
+.fumetti {
+  width: 350px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: end;
+}
+
+.fumetti img {
+  width: 150px;
+}
+
+.sottotitolo_fumetti {
+  padding-right: 170px;
+  color: #fff;
+}
+
+.sottotitolo_fumetti h4 {
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.sottotitolo_fumetti p {
+  font-size: 14px;
+  font-weight: 300;
 }

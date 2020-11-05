@@ -1,3 +1,22 @@
+/*   <h1 style="color: aliceblue;">helòlìì</h1>
+  <ul class="honeycomb">
+    <li class="honeycomb-cell ">
+      <img class="honeycomb-cell_img" src="img/365.png" alt="assistenza365">
+      <div class="honeycomb-cell_title">Logo 1</div>
+    </li>
+    <li class="honeycomb-cell">
+      <img class="honeycomb-cell_img" src="img/365.png" alt="assistenza365">
+      <div class="honeycomb-cell_title">Logo 2</div>
+    </li>
+    <li class="honeycomb-cell">
+      <img class="honeycomb-cell_img" src="img/365.png" alt="assistenza365">
+      <div class="honeycomb-cell_title">Logo 2</div>
+    </li>
+
+    <li class="honeycomb-cell honeycomb_Hidden">
+    </li>
+  </ul> 
+ */
 * {
   box-sizing: border-box;
   margin: 0;
