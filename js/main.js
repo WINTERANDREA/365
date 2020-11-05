@@ -26,3 +26,12 @@ for (i = 0; i < coll.length; i++) {
     }
     });
 }
+
+// Expand exagon container on screen < 992px
+    $(window).resize(function () {
+      if (window.innerWidth < 992) {
+        $('#contenitore_esagono').removeClass('col-12');
+      } else {
+        $('#contenitore_esagono').addClass('col-12');
+      }
+    });
