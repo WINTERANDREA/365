@@ -373,23 +373,22 @@ button:focus {
   font-weight: bold;
   color: var(--primary);
   display: block;
-  font-size: 34px;
+  font-size: 43px;
   margin-top: 16px;
 }
 
 .titolo_fumetti h3 span:nth-child(2) {
   margin-top: -7px;
-  font-size: 30px;
+  font-size: 38px;
   margin-top: 2px;
 }
 
 .titolo_fumetti h3 span:last-child {
   margin-top: -7px;
-  font-size: 48px;
+  font-size: 60.5px;
 }
 
 .fumetti {
-  width: 350px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: end;
@@ -399,8 +398,23 @@ button:focus {
   width: 150px;
 }
 
+.fumetti img:nth-child(2) {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.fumetti img:nth-child(3) {
+  margin-top: -40px;
+  margin-right: 20px;
+}
+
+.fumetti img:nth-child(4) {
+  margin-top: -20px;
+  margin-left: 30px;
+}
+
 .sottotitolo_fumetti {
-  padding-right: 170px;
+  padding-right: 8%;
   color: #fff;
 }
 
