@@ -513,7 +513,7 @@
   }
 
   .esagono_cont_2 {
-    transform: translate(195px, 23px);
+    transform: translate(195px, 22px);
   }
 
   .esagono_cont_3 {
@@ -521,16 +521,16 @@
   }
 
   .esagono_cont_4 {
-    transform: translate(56px, 1px);
+    transform: translate(56px, -1px);
   }
 
   .esagono_cont_4 .esagono:last-child {
-    transform: translate(-353px, 46px);
+    transform: translate(-353px, 47px);
   }
 
   .esagono {
     width: 110px;
-    height: 48px;
+    height: 49px;
   }
 
   .gold {
