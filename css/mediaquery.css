@@ -198,8 +198,13 @@
     max-width: 70%;
   }
 
+  .sottotitolo_fumetti h4 {
+    font-weight: bold;
+  }
+
   .sottotitolo_fumetti p {
     font-weight: 500;
+    font-size: 18px;
   }
   .freccia {
     display: none;
@@ -496,6 +501,8 @@
   }
   .content {
     max-height: 0;
+    padding: 0 27px;
+    text-align: left;
   }
 }
 
@@ -518,7 +525,7 @@
   }
 
   .esagono_cont_4 .esagono:last-child {
-    transform: translate(-353px, 44px);
+    transform: translate(-353px, 46px);
   }
 
   .esagono {
