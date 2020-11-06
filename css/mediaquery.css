@@ -156,6 +156,9 @@
   .sottotitolo_fumetti p {
     font-weight: 500;
   }
+  .freccia {
+    display: none;
+  }
 }
 
 /* Small laptop & tablet < 1160 */
@@ -416,5 +419,8 @@
   }
   .card_servizi {
     max-width: 100%;
+  }
+  #footer {
+    max-width: 80%;
   }
 }
