@@ -263,9 +263,16 @@ button:focus {
   width: 70%;
 }
 
-#servizi_cont_dropdown {
+/* CARD SERVIZI */
+
+#servizi_card {
   min-height: auto;
   padding-bottom: 20px;
+}
+
+.card_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .card_servizi {
@@ -280,11 +287,6 @@ button:focus {
   margin-left: 5px;
   margin-right: 5px;
   justify-self: center;
-}
-
-.card_container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .card1 {
