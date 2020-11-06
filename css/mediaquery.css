@@ -4,12 +4,6 @@
   }
 }
 
-@media (max-width: 992px) {
-  .count_cont {
-    min-width: 50%;
-  }
-}
-
 /* Big screens >  1660px */
 @media screen and (min-width: 1660px) {
   .esagono_cont {
@@ -81,13 +75,33 @@
     gap: 1%;
   }
 
-  .card6 {
+  .card1 {
+    max-width: 300px;
+    margin-top: -85px;
+  }
+
+  .card2 {
+    max-width: 200px;
+    min-height: 370px;
+    margin-top: -130px;
+  }
+
+  .card3 {
+    max-width: 250px;
+    margin-top: -50px;
+  }
+
+  .card4 {
+    max-width: 220px;
     margin-top: -95px;
   }
   .card5 {
+    max-width: 200px;
+    min-height: 500px;
     margin-top: -160px;
   }
-  .card4 {
+  .card6 {
+    max-width: 300px;
     margin-top: -95px;
   }
 }
@@ -136,6 +150,37 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .card1 {
+    max-width: 300px;
+    margin-top: -85px;
+  }
+
+  .card2 {
+    max-width: 200px;
+    min-height: 370px;
+    margin-top: -130px;
+  }
+
+  .card3 {
+    max-width: 250px;
+    margin-top: -50px;
+  }
+
+  .card4 {
+    max-width: 220px;
+    margin-top: -70px;
+  }
+
+  .card5 {
+    max-width: 200px;
+    min-height: 500px;
+    margin-top: -30px;
+  }
+
+  .card6 {
+    max-width: 300px;
+    margin-top: -20px;
+  }
   .container_vignette {
     min-height: 500px;
     background-image: linear-gradient(
@@ -266,6 +311,9 @@
   .esagono_icon .icona.small {
     padding: 20px;
   }
+  .count_cont {
+    min-width: 50%;
+  }
   #contatti img.freccia {
     display: none;
   }
@@ -322,28 +370,59 @@
   .esagono_icon .icona.small {
     padding: 10px;
   }
-  .card_container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1%;
-  }
-  .card_servizi,
-  .card2 {
-    max-width: 70%;
+
+  .count_cont img {
+    width: 40px;
   }
 
-  .card2,
-  .card3,
-  .card4,
-  .card5,
-  .card6 {
-    margin-top: 30px;
+  .count_cont span {
+    font-size: 40px;
+  }
+
+  .count_text {
+    font-size: 16px;
+    margin-left: 52px;
+  }
+
+  .servizi_cont span {
+    font-size: 36px;
+  }
+
+  .servizi_text {
+    font-size: 18px;
+  }
+
+  .card_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
   .card1 {
+    max-width: 300px;
+    margin-top: -85px;
+  }
+
+  .card2 {
+    max-width: 260px;
+    min-height: 370px;
+    margin-top: -130px;
+  }
+  .card3 {
+    max-width: 240px;
     margin-top: 10px;
   }
+
+  .card4 {
+    max-width: 300px;
+    margin-top: -30px;
+  }
   .card5 {
-    margin-bottom: 50px;
+    max-width: 200px;
+    min-height: 500px;
+    margin-top: -160px;
+  }
+  .card6 {
+    max-width: 300px;
+    margin-top: -20px;
   }
 }
 
@@ -363,6 +442,60 @@
     margin: 0 auto 30px auto;
     padding: 0;
     max-width: 80%;
+  }
+  .card_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1%;
+  }
+
+  .card_servizi {
+    padding: 10px;
+  }
+  .card_servizi h3 {
+    font-size: 26px;
+  }
+  .card_servizi img {
+    width: 35px;
+  }
+  .card1 {
+    max-width: 90%;
+  }
+
+  .card2 {
+    display: none;
+  }
+
+  .card3 {
+    max-width: 90%;
+    margin-top: 0;
+  }
+
+  .card4 {
+    max-width: 90%;
+    text-align: center;
+    margin-top: 0;
+  }
+  .card5 {
+    display: none;
+  }
+  .card6 {
+    max-width: 90%;
+    text-align: center;
+    margin-top: 0;
+  }
+  .card7 {
+    display: flex;
+    max-width: 90%;
+    justify-items: center;
+  }
+  .card8 {
+    display: flex;
+    max-width: 90%;
+    text-align: center;
+  }
+  .content {
+    max-height: 0;
   }
 }
 
@@ -417,9 +550,34 @@
   .esagono_icon .icona.small {
     padding: 10px;
   }
+  .count_cont {
+    padding: 5px;
+  }
+
+  .count_cont img {
+    width: 40px;
+  }
+
+  .count_cont span {
+    font-size: 30px;
+  }
+
+  .count_text {
+    font-size: 14px;
+    margin-left: 48px;
+  }
+
+  .servizi_cont span {
+    font-size: 36px;
+  }
+
+  .servizi_text {
+    font-size: 18px;
+  }
   .card_servizi {
     max-width: 100%;
   }
+
   #footer {
     max-width: 80%;
   }
