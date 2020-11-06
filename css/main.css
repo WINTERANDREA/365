@@ -537,6 +537,9 @@ a:hover {
   margin-top: -14px;
 }
 
+#footer a:hover {
+  color: var(--primary);
+}
 /* LIVE CHAT ZOHO DESK */
 
 @media screen and (min-width: 992px) {
