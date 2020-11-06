@@ -6,7 +6,7 @@
 
 body {
   font-family: Gotham, sans-serif;
-  background: #111111;
+  background: #fff;
   color: rgb(231, 202, 35);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -444,7 +444,7 @@ button:focus {
   font-weight: 300;
 }
 
-/* FOOTER */
+/* CONTATTI */
 #contatti {
   background: var(--primary);
   min-height: 400px;
@@ -498,4 +498,64 @@ button:focus {
 
 #contatti address a:hover {
   text-decoration: none;
+}
+
+#contatti img.freccia {
+  width: 300px;
+  height: 180px;
+  position: absolute;
+  top: 140px;
+  left: 180px;
+}
+
+/* FOOTER */
+#footer {
+  height: 80px;
+  background: #fff;
+  color: #666;
+}
+
+#footer span:nth-child(2) {
+  margin-left: 200px;
+}
+
+#footer span img {
+  width: 90px;
+  margin-left: 20px;
+  margin-top: -18px;
+}
+
+/* LIVE CHAT ZOHO DESK */
+
+@media screen and (min-width: 992px) {
+  .zohohc-295f684b19.zohohc-b75b52d18d.zohohc-bae3f1f089 {
+    width: 320px;
+    height: 80px;
+  }
+  .zohohc-d6d1aa693e {
+    width: 60px !important;
+    height: 60px !important;
+    position: absolute;
+    left: 20px;
+  }
+
+  .zohohc-295f684b19.zohohc-b75b52d18d.zohohc-bae3f1f089::before {
+    content: "Live Chat";
+    font-family: "Gotham", sans-serif;
+    font-size: bold;
+    position: absolute;
+    bottom: 40px;
+    left: 100px;
+  }
+
+  .zohohc-295f684b19.zohohc-b75b52d18d.zohohc-bae3f1f089::after {
+    content: "siamo online e pronti ad aiutarti.";
+    font-family: "Gotham", sans-serif;
+    font-size: book;
+    color: #666;
+    font-size: 12px;
+    position: absolute;
+    bottom: 25px;
+    left: 100px;
+  }
 }

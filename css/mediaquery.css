@@ -126,25 +126,39 @@
   .mb-6 {
     margin-bottom: 93px;
   }
+  #contatti img.freccia {
+    width: 220px;
+    height: 160px;
+    position: absolute;
+    top: 140px;
+    left: 100px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
-  .fumetti {
-    display: none;
-  }
-
   .container_vignette {
     min-height: 500px;
     background-image: linear-gradient(
         to left,
-        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.6),
         rgba(0, 0, 0, 0.4)
       ),
       url(../img/IMG_tastiera.jpg);
   }
+  .titolo_fumetti {
+    margin-left: 30px;
+  }
+  .sottotitolo_fumetti {
+    margin-left: 30px;
+    max-width: 70%;
+  }
+
+  .sottotitolo_fumetti p {
+    font-weight: 500;
+  }
 }
 
-/* Small laptop & tablet 992 - 1160 */
+/* Small laptop & tablet < 1160 */
 @media screen and (max-width: 1160px) {
   .esagono_cont {
     transform: translate(-130px, -50px);
@@ -201,7 +215,7 @@
   }
 }
 
-/* Tablet < 992px - 768px */
+/* Tablet < 992px */
 @media screen and (max-width: 992px) {
   .esagono_cont {
     transform: translate(-130px, -40px);
@@ -249,9 +263,12 @@
   .esagono_icon .icona.small {
     padding: 20px;
   }
+  #contatti img.freccia {
+    display: none;
+  }
 }
 
-/* Small Tablet 768px- 490px */
+/* Small Tablet 768px */
 @media screen and (max-width: 768px) {
   .esagono_cont {
     transform: translate(-130px, -40px);
@@ -324,6 +341,25 @@
   }
   .card5 {
     margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .fumetti {
+    display: none;
+  }
+  .titolo_fumetti {
+    justify-content: left;
+    margin: 30px auto 0px auto;
+    padding: 0;
+    max-width: 80%;
+    height: auto;
+  }
+  .sottotitolo_fumetti {
+    justify-content: center;
+    margin: 0 auto 30px auto;
+    padding: 0;
+    max-width: 80%;
   }
 }
 
