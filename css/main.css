@@ -52,7 +52,7 @@ a:hover {
 /* TOP SECTION */
 .hero {
   height: 500px;
-  background-image: url(../img/TOP_image.webp);
+  background-image: url(../img/TOP_image.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -414,7 +414,7 @@ a:hover {
       to bottom,
       rgba(0, 0, 0, 0.1),
       rgba(0, 0, 0, 0.1)
-    ), */ url(../img/IMG_tastiera.webp);
+    ), */ url(../img/IMG_tastiera.jpg);
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
