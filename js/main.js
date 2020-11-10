@@ -27,6 +27,14 @@ for (i = 0; i < coll.length; i++) {
     });
 }
 
+// SCROLL REVEAL
+ ScrollReveal().reveal('.card_default', {
+      duration: 600,
+      scale: 1.2,
+
+      delay: 1000
+    });
+
 // Expand exagon container on screen < 992px
     $(window).ready(function () {
       if (window.innerWidth < 992) {
