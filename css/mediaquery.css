@@ -336,7 +336,7 @@
   .card_servizi h3 {
     font-size: 24px;
   }
-  .card_default {
+  .card_servizi {
     min-width: 280px;
   }
   .footer_container {
@@ -345,6 +345,11 @@
 
   .copyrights {
     text-align: center;
+  }
+  .content {
+    max-height: 0;
+    padding: 0 15px;
+    text-align: left;
   }
 }
 
@@ -475,8 +480,8 @@
   .card_servizi img {
     width: 35px;
   }
-  card_default {
-    width: 80%;
+  card_servizi {
+    min-width: 370px;
   }
 
   /* .card1 {
@@ -515,15 +520,6 @@
     max-width: 90%;
     text-align: center;
   } */
-  .content {
-    max-height: 0;
-    padding: 0 27px;
-    text-align: left;
-  }
-
-  .card_default {
-    min-width: 370px;
-  }
 }
 
 /* Mobile < 490px */
@@ -610,7 +606,7 @@
   #footer {
     max-width: 80%;
   }
-  .card_default {
+  .card_servizi {
     min-width: 0px;
     width: 90%;
     margin-top: -40px;

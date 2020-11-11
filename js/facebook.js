@@ -1,35 +1,77 @@
+
+/* PAGINA FACEBOOK ASSISTENZA 365 RICHIESTA LINK URL DI TUTTI I POST */
 var xhttp = new XMLHttpRequest();
 xhttp.open(
   "GET", 
-"https://graph.facebook.com/oembed_post/?url=https%3A%2F%2Fwww.facebook.com%2F112960967277502%2Fposts%2F119409939965938&access_token=EAALy0N1eTEkBADBVpsRNEHhZAu8f78uZCjIiBLxCKevNH5gVktBK6d7EZCy0LN1Ifs3mooQPXpiGSDCuuMhUjcYOdVFz1BAkPVgZABnWVCUPXy7ZAZAuSzH2QnEFd7SWQKlTo4GSvJfXdgqBTSMoJF0uTYwTnlGinAeTPl5WQ9NBMMdk5emCxcjiFYvVHpsHcpyi0ZAFzKaPAZDZD"
+"https://graph.facebook.com/112960967277502/published_posts?fields=permalink_url&access_token=EAALy0N1eTEkBAP5MGKXb67KDBkOccL1z12s8CtikcTZBoqzjL8C7gx0SclHEDovrI82L86jZAX7oNa4bPqYJ71ZAQFO6mT7xqwRTsYowljCxpkMiVEi0UuHQ1sFGuYCsvExWaGUSuK66FczldJH24REn4CXxfgm49vqDJD7WwZDZD"
 );
-
-/* "https://graph.facebook.com/me?fields=id,name,feed{message,%20story}&access_token=EAALy0N1eTEkBADBVpsRNEHhZAu8f78uZCjIiBLxCKevNH5gVktBK6d7EZCy0LN1Ifs3mooQPXpiGSDCuuMhUjcYOdVFz1BAkPVgZABnWVCUPXy7ZAZAuSzH2QnEFd7SWQKlTo4GSvJfXdgqBTSMoJF0uTYwTnlGinAeTPl5WQ9NBMMdk5emCxcjiFYvVHpsHcpyi0ZAFzKaPAZDZD" */
-
-
-// Asssitenza 365 1407253866275276|81a3c6e910026ced1e492faf6915dc58
-// a365_pages 829928834485321|a3db373eb83b8a9fa2012b924350c3ae
-
-// id post prova 2 112960967277502_119409939965938
-// id post prova 1 112960967277502_119409569965975
+xhttp.send();
 
 var get_response = ()=> {
   if (xhttp.status == 200) {
-    render_post()
+    get_posts_link()
   } else {
     console.log(`error ${xhttp.status} ${xhttp.statusText}`);
   }
 }
+xhttp.onload = get_response;
 
-var render_post = ()=> {
+var get_posts_link = ()=> {
+  var posts_link_array = []
   console.log(xhttp);
   console.log(JSON.parse(xhttp.response))
-    var response = (JSON.parse(xhttp.response));
-    var post = response.html;
-    document.getElementById('post').innerHTML= post;
+  var response = (JSON.parse(xhttp.response));
+  var posts_link = response.data;
+  posts_link.forEach(post => posts_link_array.push(post.permalink_url))
+  console.log(posts_link_array[0])
+
+   var xhttp_oembed = new XMLHttpRequest();
+xhttp_oembed.open(
+  "GET", 
+`https://graph.facebook.com/oembed_post/?url=${posts_link_array[0]}&access_token=EAALy0N1eTEkBAP5MGKXb67KDBkOccL1z12s8CtikcTZBoqzjL8C7gx0SclHEDovrI82L86jZAX7oNa4bPqYJ71ZAQFO6mT7xqwRTsYowljCxpkMiVEi0UuHQ1sFGuYCsvExWaGUSuK66FczldJH24REn4CXxfgm49vqDJD7WwZDZD`
+);
+xhttp_oembed.send();
+
+xhttp_oembed.onload = ()=> {
+  if (xhttp_oembed.status == 200) {
+    get_oembed_link()
+  } else {
+    console.log(`error ${xhttp_oembed.status} ${xhttp_oembed.statusText}`);
+  }
 }
 
-xhttp.onload = get_response;
+
+var get_oembed_link = ()=> {
+  var response = (JSON.parse(xhttp_oembed.response));
+  var oembed_link = response.html;
+
+  console.log(oembed_link)
+} 
+}
+
+
+/* GENERAZIONE CODICE OEMBEDED DEI SINGOLI POST UTILIZZANDO I LINK URL DEI POST  */
+ /* var xhttp = new XMLHttpRequest();
+xhttp.open(
+  "GET", 
+`https://graph.facebook.com/oembed_post/?url=${url_preso_da_posts_link_array[0]}&access_token=EAALy0N1eTEkBAP5MGKXb67KDBkOccL1z12s8CtikcTZBoqzjL8C7gx0SclHEDovrI82L86jZAX7oNa4bPqYJ71ZAQFO6mT7xqwRTsYowljCxpkMiVEi0UuHQ1sFGuYCsvExWaGUSuK66FczldJH24REn4CXxfgm49vqDJD7WwZDZD`
+);
 xhttp.send();
 
- 
+var get_response = ()=> {
+  if (xhttp.status == 200) {
+    get_oembed_link()
+  } else {
+    console.log(`error ${xhttp.status} ${xhttp.statusText}`);
+  }
+}
+xhttp.onload = get_response;
+
+var get_oembed_link = ()=> {
+  var response = (JSON.parse(xhttp.response));
+  var oembed_link = response.html;
+
+  console.log(oembed_link)
+}
+
+ */

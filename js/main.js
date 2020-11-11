@@ -28,10 +28,9 @@ for (i = 0; i < coll.length; i++) {
 }
 
 // SCROLL REVEAL
- ScrollReveal().reveal('.card_default', {
-      duration: 600,
-      scale: 1.2,
-
+ ScrollReveal().reveal('.card_servizi', {
+      duration: 1200,
+      scale: 0,
       delay: 1000
     });
 
