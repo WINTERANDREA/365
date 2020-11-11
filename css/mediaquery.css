@@ -211,6 +211,10 @@
     margin-top: 10px;
     margin-bottom: 0;
   }
+  #post_container {
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+  }
 }
 
 /* Small laptop & tablet < 1160 */
@@ -454,6 +458,10 @@
     max-width: 300px;
     margin-top: -20px;
   } */
+  #post_container {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 630px) {

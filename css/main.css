@@ -619,6 +619,24 @@ a:hover {
 #footer a:hover {
   color: var(--primary);
 }
+
+/* POST FACEBOOK */
+
+#post_container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: self-start;
+  align-content: center;
+  height: 400px;
+}
+
+#post_container > div {
+  width: 400px;
+  padding: 20px;
+}
+
 /* LIVE CHAT ZOHO DESK */
 
 @media screen and (min-width: 992px) {
