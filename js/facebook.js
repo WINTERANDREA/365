@@ -21,13 +21,16 @@ xhttp.onload = ()=> {
   }
 };
 
+// Funzione da mettere fuori??
 var get_posts_link = ()=> {
   var response = (JSON.parse(xhttp.response));
   var posts_link = response.data;
 
-  var posts_link_array = [];
+  var posts_link_array = []
   posts_link.forEach(post => posts_link_array.push(post.permalink_url))
 
+
+  /* NUOVA CHIAMATA DEI SINGOLI POST EMBED UTILIZZANDO VALORI ARRAY */
     /* POST 1 */
    var xhttp_post1 = new XMLHttpRequest();
 
