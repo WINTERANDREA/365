@@ -31,7 +31,7 @@ for (i = 0; i < coll.length; i++) {
  ScrollReveal().reveal('.card_servizi', {
       duration: 1200,
       scale: 0,
-      delay: 1000
+      delay: 600
     });
 
 // Expand exagon container on screen < 992px
