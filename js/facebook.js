@@ -100,7 +100,31 @@ var get_posts_link = ()=> {
       var post3_link = response3.html;
       console.log(post3_link)
       document.getElementById("post3").insertAdjacentHTML("afterbegin", post3_link)
-    }    
+    } 
+    
+    /* POST 4 */
+   var xhttp_post4 = new XMLHttpRequest();
+
+    xhttp_post4.open(
+      "GET", 
+    `https://graph.facebook.com/oembed_post/?url=${posts_link_array[3]}&access_token=${access_token}`
+    );
+    xhttp_post4.send();
+
+    xhttp_post4.onload = ()=> {
+      if (xhttp_post4.status == 200) {
+        get_post4_link()
+      } else {
+        console.log(`error ${xhttp_post4.status} ${xhttp_post4.statusText}`);
+      }
+    }
+
+    var get_post4_link = ()=> {
+      var response4 = (JSON.parse(xhttp_post4.response));
+      var post4_link = response4.html;
+      console.log(post4_link)
+      document.getElementById("post4").insertAdjacentHTML("afterbegin", post4_link)
+    }
 
   }
 }

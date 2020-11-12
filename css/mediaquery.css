@@ -69,35 +69,9 @@
     height: 600px;
   }
 
-  /* .card1 {
-    max-width: 300px;
-    margin-top: -85px;
+  .Carosello {
+    padding: 30px 0px;
   }
-
-  .card2 {
-    max-width: 200px;
-    min-height: 370px;
-    margin-top: -130px;
-  }
-
-  .card3 {
-    max-width: 250px;
-    margin-top: -50px;
-  }
-
-  .card4 {
-    max-width: 220px;
-    margin-top: -95px;
-  }
-  .card5 {
-    max-width: 200px;
-    min-height: 500px;
-    margin-top: -160px;
-  }
-  .card6 {
-    max-width: 300px;
-    margin-top: -95px;
-  } */
 }
 
 /* Laptop < 1360px  */
@@ -137,37 +111,6 @@
 }
 
 @media screen and (max-width: 1200px) {
-  /* .card1 {
-    max-width: 300px;
-    margin-top: -85px;
-  }
-
-  .card2 {
-    max-width: 200px;
-    min-height: 370px;
-    margin-top: -130px;
-  }
-
-  .card3 {
-    max-width: 250px;
-    margin-top: -50px;
-  }
-
-  .card4 {
-    max-width: 220px;
-    margin-top: -70px;
-  }
-
-  .card5 {
-    max-width: 200px;
-    min-height: 500px;
-    margin-top: -30px;
-  }
-
-  .card6 {
-    max-width: 300px;
-    margin-top: -20px;
-  } */
   .container_vignette {
     min-height: 500px;
     background-image: linear-gradient(
@@ -328,14 +271,6 @@
   #contatti img.freccia {
     display: none;
   }
-  /* .card_container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-left: 30px;
-    padding-right: 30px;
-    gap: 50px;
-  } */
 
   .card_servizi h3 {
     font-size: 24px;
@@ -430,34 +365,6 @@
     font-size: 18px;
   }
 
-  /*  .card1 {
-    max-width: 300px;
-    margin-top: -85px;
-  }
-
-  .card2 {
-    max-width: 260px;
-    min-height: 370px;
-    margin-top: -130px;
-  }
-  .card3 {
-    max-width: 240px;
-    margin-top: 10px;
-  }
-
-  .card4 {
-    max-width: 300px;
-    margin-top: -30px;
-  }
-  .card5 {
-    max-width: 200px;
-    min-height: 500px;
-    margin-top: -160px;
-  }
-  .card6 {
-    max-width: 300px;
-    margin-top: -20px;
-  } */
   #post_container {
     grid-template-columns: 1fr;
     height: auto;
@@ -492,42 +399,9 @@
     min-width: 370px;
   }
 
-  /* .card1 {
-    max-width: 90%;
+  .Carosello {
+    padding: 50px;
   }
-
-  .card2 {
-    display: none;
-  }
-
-  .card3 {
-    max-width: 90%;
-    margin-top: 0;
-  }
-
-  .card4 {
-    max-width: 90%;
-    text-align: center;
-    margin-top: 0;
-  }
-  .card5 {
-    display: none;
-  }
-  .card6 {
-    max-width: 90%;
-    text-align: center;
-    margin-top: 0;
-  }
-  .card7 {
-    display: flex;
-    max-width: 90%;
-    justify-items: center;
-  }
-  .card8 {
-    display: flex;
-    max-width: 90%;
-    text-align: center;
-  } */
 }
 
 /* Mobile < 490px */
@@ -611,6 +485,10 @@
     font-size: 24px;
   }
 
+  .Carosello {
+    padding: 50px 30px;
+  }
+
   #footer {
     max-width: 80%;
   }
@@ -623,5 +501,18 @@
   }
   #footer span img {
     width: 60px;
+  }
+}
+
+/* Mobile < 403px */
+@media screen and (max-width: 403px) {
+  .Carosello .Head {
+    padding-left: 35px;
+  }
+  .Carosello {
+    padding: 50px 0;
+  }
+  .Carosello .Head .Arrows {
+    display: none;
   }
 }

@@ -60,10 +60,10 @@ for (i = 0; i < coll.length; i++) {
     nextArrow:'<span class="Slick-Next"></span>',
     easing:"linear",
     responsive:[
-      {breakpoint:1100,settings:{
+      {breakpoint:1220,settings:{
         slidesToShow:2,
       }},
-      {breakpoint:730,settings:{
+      {breakpoint:860,settings:{
         slidesToShow:1,
       }}
     ],
