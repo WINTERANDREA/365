@@ -9,7 +9,7 @@ xhttp.open(
   "GET", 
   `https://graph.facebook.com/${page_id}/published_posts?fields=permalink_url&access_token=${access_token}`
 );
-xhttp.send();
+
 xhttp.onload = ()=> {
   if (xhttp.status == 200) {
     get_posts_link()
@@ -17,6 +17,7 @@ xhttp.onload = ()=> {
     console.log(`error ${xhttp.status} ${xhttp.statusText}`);
   }
 };
+xhttp.send();
 
 // Funzione da mettere fuori??
 var get_posts_link = ()=> {
@@ -33,10 +34,9 @@ var get_posts_link = ()=> {
 
     xhttp_post1.open(
       "GET", 
-    `https://graph.facebook.com/oembed_post/?url=${posts_link_array[0]}&access_token=${access_token}`
+    `https://graph.facebook.com/oembed_post/?url=${posts_link_array[0]}&omitscript=true&access_token=${access_token}`
     );
-    xhttp_post1.send();
-
+  
     xhttp_post1.onload = ()=> {
       if (xhttp_post1.status == 200) {
         get_post1_link()
@@ -44,13 +44,14 @@ var get_posts_link = ()=> {
         console.log(`error ${xhttp_post1.status} ${xhttp_post1.statusText}`);
       }
     }
+    xhttp_post1.send();
 
 
     var get_post1_link = ()=> {
       var response1 = (JSON.parse(xhttp_post1.response));
       var post1_link = response1.html;
       console.log(post1_link)
-      document.getElementById("post1").insertAdjacentHTML("afterbegin", post1_link)
+      return document.getElementById("post1").insertAdjacentHTML("afterbegin", post1_link)
     } 
 
      /* POST 2 */
@@ -58,9 +59,8 @@ var get_posts_link = ()=> {
 
     xhttp_post2.open(
       "GET", 
-    `https://graph.facebook.com/oembed_post/?url=${posts_link_array[1]}&access_token=${access_token}`
+    `https://graph.facebook.com/oembed_post/?url=${posts_link_array[1]}&omitscript=true&access_token=${access_token}`
     );
-    xhttp_post2.send();
 
     xhttp_post2.onload = ()=> {
       if (xhttp_post2.status == 200) {
@@ -69,13 +69,14 @@ var get_posts_link = ()=> {
         console.log(`error ${xhttp_post2.status} ${xhttp_post2.statusText}`);
       }
     }
+    xhttp_post2.send();
 
 
     var get_post2_link = ()=> {
       var response2 = (JSON.parse(xhttp_post2.response));
       var post2_link = response2.html;
       console.log(post2_link)
-      document.getElementById("post2").insertAdjacentHTML("afterbegin", post2_link)
+      return document.getElementById("post2").insertAdjacentHTML("afterbegin", post2_link)
     } 
 
     /* POST 3 */
@@ -83,9 +84,8 @@ var get_posts_link = ()=> {
 
     xhttp_post3.open(
       "GET", 
-    `https://graph.facebook.com/oembed_post/?url=${posts_link_array[2]}&access_token=${access_token}`
+    `https://graph.facebook.com/oembed_post/?url=${posts_link_array[2]}&omitscript=true&access_token=${access_token}`
     );
-    xhttp_post3.send();
 
     xhttp_post3.onload = ()=> {
       if (xhttp_post3.status == 200) {
@@ -94,12 +94,13 @@ var get_posts_link = ()=> {
         console.log(`error ${xhttp_post3.status} ${xhttp_post3.statusText}`);
       }
     }
+    xhttp_post3.send();
 
     var get_post3_link = ()=> {
       var response3 = (JSON.parse(xhttp_post3.response));
       var post3_link = response3.html;
       console.log(post3_link)
-      document.getElementById("post3").insertAdjacentHTML("afterbegin", post3_link)
+      return document.getElementById("post3").insertAdjacentHTML("afterbegin", post3_link)
     } 
     
     /* POST 4 */
@@ -107,9 +108,8 @@ var get_posts_link = ()=> {
 
     xhttp_post4.open(
       "GET", 
-    `https://graph.facebook.com/oembed_post/?url=${posts_link_array[3]}&access_token=${access_token}`
+    `https://graph.facebook.com/oembed_post/?url=${posts_link_array[3]}&omitscript=true&access_token=${access_token}`
     );
-    xhttp_post4.send();
 
     xhttp_post4.onload = ()=> {
       if (xhttp_post4.status == 200) {
@@ -118,20 +118,17 @@ var get_posts_link = ()=> {
         console.log(`error ${xhttp_post4.status} ${xhttp_post4.statusText}`);
       }
     }
+    xhttp_post4.send();
 
     var get_post4_link = ()=> {
       var response4 = (JSON.parse(xhttp_post4.response));
       var post4_link = response4.html;
       console.log(post4_link)
-      document.getElementById("post4").insertAdjacentHTML("afterbegin", post4_link)
+      return document.getElementById("post4").insertAdjacentHTML("afterbegin", post4_link)
     }
 
   }
 }
 
-
-
-
-
-
 page_posts_request(page_id, access_token)
+
