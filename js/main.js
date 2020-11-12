@@ -50,7 +50,7 @@ for (i = 0; i < coll.length; i++) {
   $(".SlickCarousel").slick({
     rtl:false, // If RTL Make it true & .slick-slide{float:right;}
     autoplay:true, 
-    autoplaySpeed:5000, //  Slide Delay
+    autoplaySpeed:6000, //  Slide Delay
     speed:800, // Transition Speed
     slidesToShow:3, // Number Of Carousel
     slidesToScroll:1, // Slide To Move 
