@@ -107,7 +107,7 @@ var get_posts_link = ()=> {
 
     xhttp_post4.open(
       "GET", 
-    `https://graph.facebook.com/oembed_post/?url=${posts_link_array[0]}&access_token=${access_token}`
+    `https://graph.facebook.com/oembed_post/?url=${posts_link_array[3]}&access_token=${access_token}`
     );
     xhttp_post4.send();
 
