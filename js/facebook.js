@@ -2,9 +2,6 @@
 let page_id = "112960967277502";
 let access_token = "EAALy0N1eTEkBAP5MGKXb67KDBkOccL1z12s8CtikcTZBoqzjL8C7gx0SclHEDovrI82L86jZAX7oNa4bPqYJ71ZAQFO6mT7xqwRTsYowljCxpkMiVEi0UuHQ1sFGuYCsvExWaGUSuK66FczldJH24REn4CXxfgm49vqDJD7WwZDZD";
 
-
-
-
 /* Richiesta di tutti i link url dei post */
 var page_posts_request = (page_id, access_token) => {
 var xhttp = new XMLHttpRequest();
@@ -36,7 +33,7 @@ var get_posts_link = ()=> {
 
     xhttp_post1.open(
       "GET", 
-    `https://graph.facebook.com/oembed_post/?url=${posts_link_array[0]}&access_token=EAALy0N1eTEkBAP5MGKXb67KDBkOccL1z12s8CtikcTZBoqzjL8C7gx0SclHEDovrI82L86jZAX7oNa4bPqYJ71ZAQFO6mT7xqwRTsYowljCxpkMiVEi0UuHQ1sFGuYCsvExWaGUSuK66FczldJH24REn4CXxfgm49vqDJD7WwZDZD`
+    `https://graph.facebook.com/oembed_post/?url=${posts_link_array[0]}&access_token=${access_token}`
     );
     xhttp_post1.send();
 
@@ -61,7 +58,7 @@ var get_posts_link = ()=> {
 
     xhttp_post2.open(
       "GET", 
-    `https://graph.facebook.com/oembed_post/?url=${posts_link_array[1]}&access_token=EAALy0N1eTEkBAP5MGKXb67KDBkOccL1z12s8CtikcTZBoqzjL8C7gx0SclHEDovrI82L86jZAX7oNa4bPqYJ71ZAQFO6mT7xqwRTsYowljCxpkMiVEi0UuHQ1sFGuYCsvExWaGUSuK66FczldJH24REn4CXxfgm49vqDJD7WwZDZD`
+    `https://graph.facebook.com/oembed_post/?url=${posts_link_array[1]}&access_token=${access_token}`
     );
     xhttp_post2.send();
 
@@ -86,7 +83,7 @@ var get_posts_link = ()=> {
 
     xhttp_post3.open(
       "GET", 
-    `https://graph.facebook.com/oembed_post/?url=${posts_link_array[2]}&access_token=EAALy0N1eTEkBAP5MGKXb67KDBkOccL1z12s8CtikcTZBoqzjL8C7gx0SclHEDovrI82L86jZAX7oNa4bPqYJ71ZAQFO6mT7xqwRTsYowljCxpkMiVEi0UuHQ1sFGuYCsvExWaGUSuK66FczldJH24REn4CXxfgm49vqDJD7WwZDZD`
+    `https://graph.facebook.com/oembed_post/?url=${posts_link_array[2]}&access_token=${access_token}`
     );
     xhttp_post3.send();
 
@@ -98,14 +95,12 @@ var get_posts_link = ()=> {
       }
     }
 
-
     var get_post3_link = ()=> {
       var response3 = (JSON.parse(xhttp_post3.response));
       var post3_link = response3.html;
       console.log(post3_link)
       document.getElementById("post3").insertAdjacentHTML("afterbegin", post3_link)
     }    
-
 
   }
 }
