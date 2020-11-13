@@ -857,6 +857,7 @@ a:hover {
 }
 
 .ProductBlock {
+  width: 400px;
   padding: 0 7.5px;
   display: flex;
   justify-content: center;
@@ -886,4 +887,15 @@ a:hover {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrolbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrolbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
