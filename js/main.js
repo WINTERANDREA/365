@@ -67,7 +67,7 @@ for (i = 0; i < coll.length; i++) {
       {breakpoint:1200,settings:{
         slidesToShow:2,
       }},
-      {breakpoint:860,settings:{
+      {breakpoint:920,settings:{
         slidesToShow:1,
       }}
     ],
