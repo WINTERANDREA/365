@@ -780,7 +780,7 @@ a:hover {
 /* Slider Theme Style */
 
 .Carosello {
-  padding: 30px 70px;
+  padding: 50px 70px 90px 70px;
 }
 
 .Carosello:after,
@@ -857,7 +857,7 @@ a:hover {
 }
 
 .ProductBlock {
-  width: 400px;
+  width: 350px;
   padding: 0 7.5px;
   display: flex;
   justify-content: center;

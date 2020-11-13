@@ -61,13 +61,13 @@ for (i = 0; i < coll.length; i++) {
     nextArrow:'<span class="Slick-Next"></span>',
     easing:"linear",
     responsive:[
-      {breakpoint:1400,settings:{
+      {breakpoint:1650,settings:{
         slidesToShow:3,
       }},
-      {breakpoint:992,settings:{
+      {breakpoint:1200,settings:{
         slidesToShow:2,
       }},
-      {breakpoint:760,settings:{
+      {breakpoint:860,settings:{
         slidesToShow:1,
       }}
     ],
