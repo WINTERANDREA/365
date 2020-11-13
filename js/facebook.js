@@ -129,6 +129,30 @@ var get_posts_link = ()=> {
       return document.getElementById("post4").insertAdjacentHTML("afterbegin", post4_link)
     }
 
+    /* POST 5 */
+   var xhttp_post5 = new XMLHttpRequest();
+
+    xhttp_post5.open(
+      "GET", 
+    `https://graph.facebook.com/oembed_post/?url=${posts_link_array[4]}&omitscript=true&access_token=${access_token}`
+    );
+
+    xhttp_post5.onload = ()=> {
+      if (xhttp_post5.status == 200) {
+        get_post5_link()
+      } else {
+        console.log(`error ${xhttp_post5.status} ${xhttp_post5.statusText}`);
+      }
+    }
+    xhttp_post5.send();
+
+    var get_post5_link = ()=> {
+      var response5= (JSON.parse(xhttp_post5.response));
+      var post5_link = response5.html;
+      console.log(post5_link)
+      return document.getElementById("post5").insertAdjacentHTML("afterbegin", post5_link)
+    }
+
   
   }
 }
