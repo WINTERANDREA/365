@@ -21,6 +21,7 @@ xhttp.send();
 
 // Funzione da mettere fuori??
 var get_posts_link = ()=> {
+  console.log(xhttp.response)
   var response = (JSON.parse(xhttp.response));
   var posts_link = response.data;
 
@@ -48,6 +49,7 @@ var get_posts_link = ()=> {
 
 
     var get_post1_link = ()=> {
+      console.log(xhttp_post1.response)
       var response1 = (JSON.parse(xhttp_post1.response));
       var post1_link = response1.html;
       console.log(post1_link)
@@ -127,6 +129,7 @@ var get_posts_link = ()=> {
       return document.getElementById("post4").insertAdjacentHTML("afterbegin", post4_link)
     }
 
+  
   }
 }
 

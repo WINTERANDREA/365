@@ -594,6 +594,89 @@ a:hover {
   line-height: 16px;
 }
 
+/* FOOTER */
+#footer {
+  height: 70px;
+  background: #fff;
+  color: #666;
+  font-size: 14px;
+  max-width: 90%;
+}
+
+.footer_container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.inservizi {
+  margin-left: 30px;
+}
+
+#footer span img {
+  width: 80px;
+  margin-left: 20px;
+  margin-top: -16px;
+}
+
+#footer a:hover {
+  color: var(--primary);
+}
+
+/* POST FACEBOOK */
+
+#post_container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: self-start;
+  align-content: center;
+  height: 400px;
+}
+
+#post_container > div {
+  width: 400px;
+  padding: 20px;
+}
+
+/* LIVE CHAT ZOHO DESK */
+
+@media screen and (min-width: 992px) {
+  #zohohc-asap-web-launcherbox {
+    width: 270px;
+    height: 80px;
+  }
+  #zohohc-asap-web-launcherbox img {
+    width: 50px !important;
+    height: 50px !important;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+  }
+
+  #zohohc-asap-web-launcherbox::before {
+    content: "Live Chat";
+    font-family: "Gotham", sans-serif;
+    font-size: bold;
+    position: absolute;
+    bottom: 40px;
+    left: 80px;
+  }
+
+  #zohohc-asap-web-launcherbox::after {
+    content: "siamo online e pronti ad aiutarti.";
+    font-family: "Gotham", sans-serif;
+    font-size: book;
+    color: #666;
+    font-size: 12px;
+    position: absolute;
+    bottom: 25px;
+    left: 80px;
+  }
+}
+
 /* CAROSELLO */
 
 .slick-slider {
@@ -697,7 +780,7 @@ a:hover {
 /* Slider Theme Style */
 
 .Carosello {
-  padding: 30px 120px;
+  padding: 30px 70px;
 }
 
 .Carosello:after,
@@ -803,87 +886,4 @@ a:hover {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.04);
-}
-
-/* FOOTER */
-#footer {
-  height: 70px;
-  background: #fff;
-  color: #666;
-  font-size: 14px;
-  max-width: 90%;
-}
-
-.footer_container {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-}
-
-.inservizi {
-  margin-left: 30px;
-}
-
-#footer span img {
-  width: 80px;
-  margin-left: 20px;
-  margin-top: -16px;
-}
-
-#footer a:hover {
-  color: var(--primary);
-}
-
-/* POST FACEBOOK */
-
-#post_container {
-  margin-top: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-  align-items: self-start;
-  align-content: center;
-  height: 400px;
-}
-
-#post_container > div {
-  width: 400px;
-  padding: 20px;
-}
-
-/* LIVE CHAT ZOHO DESK */
-
-@media screen and (min-width: 992px) {
-  #zohohc-asap-web-launcherbox {
-    width: 270px;
-    height: 80px;
-  }
-  #zohohc-asap-web-launcherbox img {
-    width: 50px !important;
-    height: 50px !important;
-    position: absolute;
-    top: 20px;
-    left: 15px;
-  }
-
-  #zohohc-asap-web-launcherbox::before {
-    content: "Live Chat";
-    font-family: "Gotham", sans-serif;
-    font-size: bold;
-    position: absolute;
-    bottom: 40px;
-    left: 80px;
-  }
-
-  #zohohc-asap-web-launcherbox::after {
-    content: "siamo online e pronti ad aiutarti.";
-    font-family: "Gotham", sans-serif;
-    font-size: book;
-    color: #666;
-    font-size: 12px;
-    position: absolute;
-    bottom: 25px;
-    left: 80px;
-  }
 }

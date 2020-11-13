@@ -2,6 +2,9 @@
   .count_cont {
     min-width: 350px;
   }
+  .ProductBlock {
+    max-width: 350px;
+  }
 }
 
 /* Big screens >  1660px */

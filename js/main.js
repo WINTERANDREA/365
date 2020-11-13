@@ -46,12 +46,13 @@ for (i = 0; i < coll.length; i++) {
 
 
     // CAROSELLO
-    $(document).ready(function(){
+    setTimeout(function(){
+      $(document).ready(function(){
   $(".SlickCarousel").slick({
     rtl:false, // If RTL Make it true & .slick-slide{float:right;}
     autoplay:true, 
-    autoplaySpeed:2000, //  Slide Delay
-    speed:2000, // Transition Speed
+    autoplaySpeed:6000, //  Slide Delay
+    speed:1000, // Transition Speed
     slidesToShow:3, // Number Of Carousel
     slidesToScroll:1, // Slide To Move 
     pauseOnHover:false,
@@ -69,3 +70,5 @@ for (i = 0; i < coll.length; i++) {
     ],
   })
 })
+    }, 1500)
+    
