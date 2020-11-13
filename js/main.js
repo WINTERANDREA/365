@@ -62,7 +62,7 @@ for (i = 0; i < coll.length; i++) {
     easing:"linear",
     responsive:[
       {breakpoint:1400,settings:{
-        slidesToShow:2,
+        slidesToShow:3,
       }},
       {breakpoint:992,settings:{
         slidesToShow:2,
