@@ -53,7 +53,7 @@ for (i = 0; i < coll.length; i++) {
     autoplay:true, 
     autoplaySpeed:6000, //  Slide Delay
     speed:1000, // Transition Speed
-    slidesToShow:3, // Number Of Carousel
+    slidesToShow:4, // Number Of Carousel
     slidesToScroll:1, // Slide To Move 
     pauseOnHover:false,
     appendArrows:$(".Carosello .Head .Arrows"), // Class For Arrows Buttons
@@ -61,10 +61,13 @@ for (i = 0; i < coll.length; i++) {
     nextArrow:'<span class="Slick-Next"></span>',
     easing:"linear",
     responsive:[
-      {breakpoint:1220,settings:{
+      {breakpoint:1400,settings:{
         slidesToShow:2,
       }},
-      {breakpoint:860,settings:{
+      {breakpoint:992,settings:{
+        slidesToShow:2,
+      }},
+      {breakpoint:760,settings:{
         slidesToShow:1,
       }}
     ],
