@@ -512,9 +512,15 @@
   .Carosello {
     padding: 50px 0;
   }
-  .Carosello .Head .Arrows {
-    display: none;
+  .Carosello .Head .Slick-Prev,
+  .Carosello .Head .Slick-Next {
+    width: 50px;
   }
+
+  .Carosello .Head .Slick-Next {
+    margin-right: 10px;
+  }
+
   #carousel {
     padding-left: 0;
     padding-right: 0;
