@@ -2,9 +2,6 @@
   .count_cont {
     min-width: 350px;
   }
-  .ProductBlock {
-    max-width: 350px;
-  }
 }
 
 /* Big screens >  1660px */
@@ -510,12 +507,16 @@
 /* Mobile < 403px */
 @media screen and (max-width: 403px) {
   .Carosello .Head {
-    padding-left: 35px;
+    padding-left: 15px;
   }
   .Carosello {
     padding: 50px 0;
   }
   .Carosello .Head .Arrows {
     display: none;
+  }
+  #carousel {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
