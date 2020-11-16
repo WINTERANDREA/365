@@ -46,7 +46,7 @@ for (i = 0; i < coll.length; i++) {
 
 
     // CAROSELLO
-    setTimeout(function(){
+  /*   setTimeout(function(){
       $(document).ready(function(){
   $(".SlickCarousel").slick({
     rtl:false, // If RTL Make it true & .slick-slide{float:right;}
@@ -75,3 +75,4 @@ for (i = 0; i < coll.length; i++) {
 })
     }, 1800)
     
+ */
