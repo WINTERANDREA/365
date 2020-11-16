@@ -4,7 +4,7 @@ let access_token = "EAALy0N1eTEkBAP5MGKXb67KDBkOccL1z12s8CtikcTZBoqzjL8C7gx0SclH
 var count_post;
 
 async function get_posts(){
-  const response = await fetch(`https://graph.facebook.com/${page_id}/published_posts?fields=permalink_url&access_token=${access_token}`)
+  const response = await fetch(`https://graph.facebook.com/v9.0/${page_id}/published_posts?fields=permalink_url&access_token=${access_token}`)
   const posts = await response.json();
   const last_posts = posts.data.splice(0,5);
   console.log(last_posts)
