@@ -34,7 +34,6 @@ window.onload = function(){
     console.log(response)
     let renders = document.querySelectorAll("[fb-xfbml-state]");
     if (renders.length == count_post){
-      console.log(renders)
       $(".SlickCarousel").slick({
     rtl:false, // If RTL Make it true & .slick-slide{float:right;}
     autoplay:true, 
