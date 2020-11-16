@@ -9,6 +9,7 @@ async function get_posts(){
   const last_posts = posts.data.splice(0,5);
   console.log(last_posts)
   count_post = last_posts.length
+  console.log(count_post)
   return last_posts
 }
 
@@ -33,11 +34,12 @@ window.onload = function(){
     console.log(response)
     let renders = document.querySelectorAll("[fb-xfbml-state]");
     if (renders.length == count_post){
+      console.log(renders)
       $(".SlickCarousel").slick({
     rtl:false, // If RTL Make it true & .slick-slide{float:right;}
     autoplay:true, 
-    autoplaySpeed:6000, //  Slide Delay
-    speed:1000, // Transition Speed
+    autoplaySpeed:4000, //  Slide Delay
+    speed:1500, // Transition Speed
     slidesToShow:4, // Number Of Carousel
     slidesToScroll:1, // Slide To Move 
     pauseOnHover:false,
