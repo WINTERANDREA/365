@@ -27,6 +27,8 @@ get_posts()
     post_number += 1;
   }
   FB.XFBML.parse();
+}).catch(e => {
+  console.log(e)
 })
 
 window.onload = function(){
