@@ -1,3 +1,2 @@
-/index2.html
-  # headers for that path:
+/index.html
   X-Frame-Options: SAMEORIGIN
