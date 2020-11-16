@@ -43,8 +43,17 @@
 
 <body>
   <!-- FB SDK -->
-  <script async="1" defer="1" crossorigin="anonymous"
-    src="https://connect.facebook.net/it_IT/sdk.js#xfbml=1&amp;version=v8.0" nonce="ZhD0U8rY"></script>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        appId: '829928834485321',
+        autoLogAppEvents: true,
+        xfbml: true,
+        version: 'v9.0'
+      });
+    };
+  </script>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
 
   <!-- TOP SECTION -->
   <section id='top'>
