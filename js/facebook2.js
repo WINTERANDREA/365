@@ -57,7 +57,6 @@ window.onload = function(){
       }}
     ],
   })
-  $("#loader_container").remove()
   } 
   })
 }
