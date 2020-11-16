@@ -680,8 +680,8 @@ a:hover {
 /* CAROSELLO */
 
 .slider_container {
-  height: 250px;
-  overflow-y: scroll;
+  height: 200px;
+  overflow-y: hidden;
   overflow-x: hidden;
 }
 
