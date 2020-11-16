@@ -331,7 +331,7 @@ a:hover {
 
 .card_servizi:nth-child(2) {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../img/img_servizi_2.jpg);
+    url(../img/img_servizi_4.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -339,7 +339,7 @@ a:hover {
 
 .card_servizi:nth-child(3) {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../img/img_servizi_3.jpg);
+    url(../img/img_servizi_5.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -347,7 +347,7 @@ a:hover {
 
 .card_servizi:nth-child(4) {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../img/img_servizi_4.jpg);
+    url(../img/img_servizi_disaster.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -355,7 +355,7 @@ a:hover {
 
 .card_servizi:nth-child(5) {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../img/img_servizi_5.jpg);
+    url(../img/img_servizi_6.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -363,7 +363,7 @@ a:hover {
 
 .card_servizi:nth-child(6) {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../img/img_servizi_6.jpg);
+    url(../img/img_servizi_2.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
