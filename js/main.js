@@ -43,36 +43,3 @@ for (i = 0; i < coll.length; i++) {
       delay: 600
     });
 
-
-
-    // CAROSELLO
-  /*   setTimeout(function(){
-      $(document).ready(function(){
-  $(".SlickCarousel").slick({
-    rtl:false, // If RTL Make it true & .slick-slide{float:right;}
-    autoplay:true, 
-    autoplaySpeed:6000, //  Slide Delay
-    speed:1000, // Transition Speed
-    slidesToShow:4, // Number Of Carousel
-    slidesToScroll:1, // Slide To Move 
-    pauseOnHover:false,
-    appendArrows:$(".Carosello .Head .Arrows"), // Class For Arrows Buttons
-    prevArrow:'<span class="Slick-Prev"></span>',
-    nextArrow:'<span class="Slick-Next"></span>',
-    easing:"linear",
-    responsive:[
-      {breakpoint:1650,settings:{
-        slidesToShow:3,
-      }},
-      {breakpoint:1200,settings:{
-        slidesToShow:2,
-      }},
-      {breakpoint:920,settings:{
-        slidesToShow:1,
-      }}
-    ],
-  })
-})
-    }, 1800)
-    
- */

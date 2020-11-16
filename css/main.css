@@ -680,6 +680,7 @@ a:hover {
 /* CAROSELLO */
 
 .slider_container {
+  position: relative;
   height: 200px;
   overflow-y: hidden;
   overflow-x: hidden;
@@ -909,7 +910,7 @@ a:hover {
 /* Loader - Spinner */
 #loader_container {
   height: 205px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: white;
   position: absolute;
   z-index: 400;
   width: 101%;
