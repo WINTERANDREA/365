@@ -680,6 +680,7 @@ a:hover {
 /* CAROSELLO */
 
 .slider_container {
+  position: relative;
   height: 200px;
   overflow-y: hidden;
   overflow-x: hidden;
@@ -907,7 +908,13 @@ a:hover {
 }
 
 /* Loader - Spinner */
-
+#loader_container {
+  height: 205px;
+  background-color: white;
+  position: absolute;
+  z-index: 400;
+  width: 101%;
+}
 #loader {
   border: 6px solid #f3f3f3; /* Light grey */
   border-top: 6px solid var(--primary); /* Blue */
@@ -917,8 +924,6 @@ a:hover {
   animation: spin 2s linear infinite;
   z-index: 20;
   margin: 0 auto;
-  margin-top: 50px;
-  margin-bottom: -150px;
 }
 
 @keyframes spin {
