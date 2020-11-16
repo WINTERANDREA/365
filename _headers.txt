@@ -1,2 +1,0 @@
-/index.html
-  X-Frame-Options: SAMEORIGIN
