@@ -569,6 +569,10 @@ a:hover {
   float: right;
 }
 
+.fb_more a:focus {
+  outline: none;
+}
+
 .fb_message p {
   padding: 10px 20px;
   color: #666;
