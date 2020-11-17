@@ -512,9 +512,10 @@ a:hover {
   background-color: white;
   height: 380px;
   width: 350px;
-  border: 1px solid #d0d1d5;
+  /* border: 1px solid #d0d1d5; */
+  border: none;
   border-radius: 3px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Not original, just a test */
+  box-shadow: 10px 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .fb_header {
