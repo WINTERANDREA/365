@@ -40,6 +40,6 @@ for (i = 0; i < coll.length; i++) {
  ScrollReveal().reveal('.card_servizi', {
       duration: 1200,
       scale: 0,
-      delay: 600
+      delay: 400
     });
 
