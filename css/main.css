@@ -567,6 +567,7 @@ a:hover {
   margin-top: -5px;
   margin-bottom: 20px;
   float: right;
+  letter-spacing: 1px;
 }
 
 .fb_more a:focus {
