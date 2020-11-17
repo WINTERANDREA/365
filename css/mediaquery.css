@@ -525,4 +525,7 @@
     padding-left: 0;
     padding-right: 0;
   }
+  .fb_post_card {
+    width: 100%;
+  }
 }

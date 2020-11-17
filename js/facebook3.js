@@ -74,7 +74,7 @@ window.onload = function(){
     if (renders.length == count_post){
       $(".SlickCarousel").slick({
     rtl:false, // If RTL Make it true & .slick-slide{float:right;}
-    autoplay:true, 
+    autoplay:false, 
     autoplaySpeed:4000, //  Slide Delay
     speed:1500, // Transition Speed
     slidesToShow:4, // Number Of Carousel
