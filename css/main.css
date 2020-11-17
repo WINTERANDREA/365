@@ -563,7 +563,7 @@ a:hover {
   padding: 10px 20px;
   color: var(--primary);
   font-size: 12px;
-  font-weight: 300;
+  font-weight: bold;
   margin-top: -5px;
   margin-bottom: 20px;
   float: right;
