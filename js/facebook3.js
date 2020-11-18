@@ -65,7 +65,7 @@ get_posts()
 })
 
 
-
+/* INITIALIZE CAROUSEL */
 window.onload = function(){
   FB.Event.subscribe('xfbml.render', function(response) {
     console.log(response)
