@@ -388,6 +388,13 @@
     padding: 0;
     max-width: 80%;
   }
+  .container_servizi {
+    padding: 10px 40px;
+  }
+
+  .card_servizi {
+    min-width: 80%;
+  }
 
   .card_servizi h3 {
     font-size: 26px;
@@ -501,6 +508,9 @@
   }
   #footer span img {
     width: 60px;
+  }
+  .container_servizi {
+    padding: 10px;
   }
 }
 
