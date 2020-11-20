@@ -45,7 +45,12 @@ for (i = 0; i < coll.length; i++) {
 
 
 // CHAT ZOHO DESK
-setTimeout(function() {
+/* setTimeout(function() {
     $("#loader_container").remove()
   window.ZohoHCAsap = window.ZohoHCAsap || function (a, b) { ZohoHCAsap[a] = b; }; (function () { var d = document; var s = d.createElement("script"); s.type = "text/javascript"; s.defer = true; s.src = "https://desk.zoho.com/portal/api/web/inapp/545111000000311053?orgId=727482928"; d.getElementsByTagName("head")[0].appendChild(s); })();
-}, 6000)
+}, 6000) */
+
+
+/* new chat account produzione */
+setTimeout(function() {
+window.ZohoHCAsap=window.ZohoHCAsap||function(a,b){ZohoHCAsap[a]=b;};(function(){var d=document;var s=d.createElement("script");s.type="text/javascript";s.defer=true;s.src="https://desk.zoho.eu/portal/api/web/inapp/54009000000130147?orgId=20073723494";d.getElementsByTagName("head")[0].appendChild(s);})();}, 6000)
