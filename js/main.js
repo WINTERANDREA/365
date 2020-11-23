@@ -52,6 +52,7 @@ for (i = 0; i < coll.length; i++) {
 
 
 /* new chat account produzione */
-setTimeout(function() {
+/* setTimeout(function() {
 var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode:"8efa4e050a5bc01fe8bb1bb607a7d18da919faf8ddd93bdcf85ae1a777568be50ee1ac66e43b5af19860829777654fa3", values:{},ready:function(){}};var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="https://salesiq.zoho.eu/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
 }, 6000)
+ */
