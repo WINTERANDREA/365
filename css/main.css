@@ -1047,3 +1047,29 @@ a:hover {
     left: 80px;
   }
 }
+
+/* ZOHO WIDGET */
+/* #feedbacklabel {
+  top: 150px !important;
+  left: 600px !important;
+}
+
+#feedbacklab::after {
+  content: "blues";
+  display: absolute;
+  left: 0;
+  background-color: black;
+}
+.zsfbleft {
+  transform: rotate(0) !important;
+  -webkit-transform: rotate(0) !important;
+}
+
+#feedbacklabel span {
+  background-color: black !important;
+  background-image: url(../img/share.svg);
+  background-repeat: no-repeat;
+  max-width: 300px !important;
+  width: 300px !important;
+  height: 30px;
+} */

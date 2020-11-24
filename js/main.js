@@ -56,3 +56,9 @@ setTimeout(function() {
 window.ZohoHCAsap = window.ZohoHCAsap || function (a, b) { ZohoHCAsap[a] = b; }; (function () { var d = document; var s = d.createElement("script"); s.type = "text/javascript"; s.defer = true; s.src = "https://desk.zoho.eu/portal/api/web/inapp/54009000000130147?orgId=20073723494"; d.getElementsByTagName("head")[0].appendChild(s); })(); 
 }, 6000)
 
+
+/* setTimeout(function() {
+var label = document.querySelector("#feedbacklabelspan").innerText;
+    console.log("----------------------------", label)
+  label= "popup"
+},2000) */
